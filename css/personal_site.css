@@ -1,4 +1,10 @@
-.h1{
-    text-size-adjust: 300%;
-    
+.display-4 {
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.lead {
+    font-size: 50px;
+}
+.heading {
+    font-size: 20px;
 }
