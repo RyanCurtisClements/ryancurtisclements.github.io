@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\js",
+    "\\php"
   ],
-  "SelectedNode": "\\css\\main.css",
+  "SelectedNode": "\\php\\contact.php",
   "PreviewInSolutionExplorer": false
 }
