@@ -7,7 +7,8 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-;(function($, window, document, undefined){
+; (function ($, window, document, undefined) {
+    console.log("Entered Root() fxn");
 
     var pluginName = 'nivoLightbox',
         defaults = {
@@ -25,7 +26,8 @@
             errorMessage: 'The requested content cannot be loaded. Please try again later.'
         };
 
-    function NivoLightbox(element, options){
+    function NivoLightbox(element, options) {
+        console.log("Entered NivoLightBox() fxn");
         this.el = element;
         this.$el = $(this.el);
 
@@ -39,7 +41,8 @@
 
     NivoLightbox.prototype = {
 
-        init: function(){
+        init: function () {
+            console.log("Entered Init() fxn");
 			var $this = this;
 
 			// Need this so we don't use CSS transitions in mobile
@@ -68,7 +71,8 @@
 
         },
 
-        showLightbox: function(e){
+        showLightbox: function (e) {
+            console.log("Entered ShowightBox() fxn");
             var $this = this,
                 currentLink = this.$el;
 
@@ -114,13 +118,15 @@
                 });
             }
 
-            setTimeout(function(){
+            setTimeout(function () {
+                console.log("Entered SetTimeout() fxn");
                 lightbox.addClass('nivo-lightbox-open');
                 $this.options.afterShowLightbox.call(this, [ lightbox ]);
             }, 1); // For CSS transitions
         },
 
-		checkContent: function( link ) {
+        checkContent: function (link) {
+            console.log("Entered CheckContent() fxn");
 			var $this = this,
                 href = link.attr('href'),
                 video = href.match(/(youtube|youtu|vimeo)\.(com|be)\/(watch\?v=([\w-]+)|([\w-]+))/);
