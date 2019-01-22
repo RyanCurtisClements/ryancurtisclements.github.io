@@ -305,6 +305,20 @@ ol.type li a:hover {
 	opacity: 0;
 	transition: all 0.5s;
 }
+
+.portfolio-links {
+    text-align: center;
+    border: 1px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #372d38;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+}
+
 .hover-bg .hover-text>h4 {
 	text-transform: uppercase;
 	opacity: 0;
